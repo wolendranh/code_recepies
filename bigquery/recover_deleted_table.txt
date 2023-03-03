@@ -1,0 +1,6 @@
+
+# this will recover table in state in which it was 1 hour before
+
+bq cp {project_name}:{project_data_set}.{deleted_table_name}@-3600000 {new_table_name}}:{new_dataset}}.{old_table_name}_recovered
+
+bq cp {bq_project_id}}:{dataset}.{deleted_table_id}@-3600000 {bq_project_id}}:{dataset}.{deleted_table_id}

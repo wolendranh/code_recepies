@@ -1,0 +1,5 @@
+
+# delete remote tag
+git push --delete origin 0.0.6
+# delete local tag
+git tag --delete 0.0.6

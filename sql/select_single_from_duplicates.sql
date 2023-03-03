@@ -1,4 +1,4 @@
--- ця штука робить:
+-- what this does:
 -- 1. PARTITION BY creates partitions by `partition_field` (in case if there are duplicates by that field there will be multiple dups in partition)
 -- 2. ROW_NUMBER numerate rows in each partition. If there are dups in partition it will look somethiing like
 --     |row_number|ups|

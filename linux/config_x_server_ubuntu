@@ -1,0 +1,13 @@
+https://stackoverflow.com/questions/35562860/start-x-server-on-google-cloud-debian-compute-engine
+
+
+If you're not interested in using the remotely running XFCE and you only want an X server for test automation, use Xvfb instead x.org. It does not require video hardware to be installed.
+
+On the remote host:
+
+
+```
+Xvfb :1 & #upper case X
+export DISPLAY=:1
+startxfce4 &
+```
